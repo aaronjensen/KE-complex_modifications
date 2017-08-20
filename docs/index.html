@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>aaronjensen's Karabiner-Elements complex_modifications rules</title>
     <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-inverse">
@@ -16,26 +17,44 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" style="margin-bottom: 100px">
       <div class="text-right" style="margin-bottom: 30px">
         <a href="https://github.com/aaronjensen/KE-complex_modifications">GitHub</a>
       </div>
 
-          <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Personal rules (@aaronjensen)</h3>
+      
+
+      <ul class="toc list-group"><li class="list-group-item list-group-item-info">Table of Contents</li><li class="list-group-item"><span class="badge">1</span><a href="#personal_settings">Personal Settings</a></li></ul>
+      <div class="text-left" style="margin-bottom: 30px">
+        <a href="javascript:$('.collapse').collapse('show')">Expand All</a> |
+        <a href="javascript:$('.collapse').collapse('hide')">Collapse All</a>
       </div>
-      <div class="panel-body">
-        <ul>
-          <li>Change f20 to hyper</li><li>Change f19 to super</li><li>Change ; to hyper. (; if left alone)</li><li>Change caps to ctrl. (esc if left alone)</li>
-        </ul>
-        <a class="btn btn-primary btn-sm" style="margin-left: 40px" href="karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Faaronjensen.github.io%2Fkarabiner%2Fjson%2Fpersonal_aaronjensen.json">Import</a>
+
+            <div class="panel panel-primary" id="personal_settings">
+        <div class="panel-heading">
+          <h3 class="panel-title">Personal Settings</h3>
+        </div>
+        <div class="panel-body">
+              <div class="panel panel-default">
+      <div class="panel-heading">
+        <a class="panel-title btn btn-link" role="button" data-toggle="collapse" href="#personal_aaronjensen" aria-expanded="false" aria-controls="personal_aaronjensen">Personal rules (@aaronjensen)</a>
+        <a class="btn btn-primary btn-sm pull-right" data-json-path="json/personal_aaronjensen.json">Import</a>
+      </div>
+      <div class="list-group collapse" id="personal_aaronjensen">
+          <div class="list-group-item">Change f20 to hyper</div><div class="list-group-item">Change f19 to super</div><div class="list-group-item">Change ; to hyper. (; if left alone)</div><div class="list-group-item">Change caps to ctrl. (esc if left alone)</div>
       </div>
     </div>
 
+        </div>
+      </div>
+
+
+      <hr />
+      <a href="example.html">Other examples</a>
     </div>
 
     <script src="assets/jquery-3.2.1.min.js"></script>
     <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
